@@ -1,0 +1,200 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+.login-background{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#8a4e00, #116257);
+
+}
+/* ============================================================== */
+.login-page-wrapper .card {
+    padding: 25px;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    border: none;
+    border-radius: 4px;
+    background: none;
+    box-shadow: none;
+}
+.login-page-wrapper .card .card-header {
+    padding-top: 2%;
+    padding-bottom: 5%;
+    border: none;
+    margin-inline: auto;
+}
+.login-page-wrapper .card .card-header img{
+    width: 100%;
+    display: block;
+    width: 180px;
+    margin: 0 auto;
+    display: flex;
+} 
+.login-page-wrapper .card  .card-body{
+    padding: 25px 32px;
+    background: #EEEEEE;
+    box-shadow: 0px 0px 4px #fff;
+    border-radius: 4px;
+}
+.login-page-wrapper .card  .card-body h2 {
+    font-family: inherit;
+    position: relative;
+    font-size: 25px;
+    color: #000;
+    font-weight: 400;
+    margin: 1.78rem 0 1.424rem 0;
+}
+.login-page-wrapper .card  .card-body h2::after {
+    content: '';
+    right: 0;
+    height: 1px;
+    position: absolute;
+    top: 15px;
+    width: 20%;
+    background: #000;
+}
+.login-page-wrapper .card  .card-body h2::before {
+    content: '';
+    left: 0;
+    height: 1px;
+    position: absolute;
+    top: 15px;
+    width: 20%;
+    background: #000;
+}
+
+/* =================== Form Section ================== */
+.form-wrapper .box{
+    margin: 0 0 15px 0;
+}
+.form-wrapper .box input{
+    color: #495057;
+    width: -webkit-fill-available !important;
+    padding: 0 10px !important;
+    border: 1px solid #ced4da;
+    background: #fff;
+    height: 35px;
+    border-radius: .25rem;
+    font-size: 13px;
+}
+.form-wrapper .box input::placeholder{
+    letter-spacing: 1px;
+    color: #999999;
+    font-weight: 400;
+}
+.form-wrapper .check-box{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-block-end: 10px;
+}
+.form-wrapper .check-box .form-control{
+    width: auto;
+}
+.form-wrapper .login-btn {
+    color: rgb(255, 255, 255);
+    background-color: rgb(138, 78, 0);
+    width: 100%;
+    text-transform: capitalize;
+    font-size: 15px;
+    border-radius: 0.25rem;
+    text-align: center;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease-out 0s;
+    cursor: pointer;
+    border: none;
+    padding-block: 7px;
+}
+.form-control:focus {
+    color: transparent;
+    background-color: transparent;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 0%) !important;
+    border: 1px solid #003559 !important;
+}
+
+/* ===================  Check Box Section  ======================== */
+
+input#remember_me{
+    display: none;
+}
+/* ===================  Without Check Box ============================ */
+[type="checkbox"] + label:before, [type="checkbox"]:not(.filled-in) + label:after {
+    border-color: #FFF;
+}
+[type="checkbox"]:not(.filled-in)+label:after {
+    border: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="checkbox"]+label:before, [type="checkbox"]:not(.filled-in)+label:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #ffffff;
+    border-radius: 1px;
+    margin-top: 2px;
+    transition: .2s;
+}
+/* ===================  Check Box ============================ */
+[type="checkbox"]:checked + label:before {
+    border-right-color: #FFF;
+    border-bottom-color: #FFF;
+}
+[type="checkbox"]:checked+label:before {
+    top: -4px;
+    left: -5px;
+    width: 12px;
+    height: 22px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+/* ===================  Check Box label ============================ */
+label{
+    color: #5a5a5a;
+    font-size: 14px !important;
+}
+[type="checkbox"]+label {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    font-size: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+}
+
+
+
+
+
+
