@@ -12,9 +12,6 @@ body{
 }
 .login-background{
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-image: linear-gradient(#8a4e00, #116257);
 
 }
@@ -29,6 +26,9 @@ body{
     border-radius: 4px;
     background: none;
     box-shadow: none;
+}
+.login-page-wrapper  .d-flex{
+    height: 100vh !important;
 }
 .login-page-wrapper .card .card-header {
     padding-top: 2%;
